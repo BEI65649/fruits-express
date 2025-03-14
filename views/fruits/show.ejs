@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- all template pages -->
+
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    // new code below this line
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+ 
+<body>
+    <h1>Here is your fruit</h1>
+    <h3><%= foundFruit.name %></h3>
+    <% if(foundFruit.name === "Strawberry") { %>
+        <p>This fruit is a strawberry</p>
+    <% } else { %>
+        <p>This fruit is not a strawberry</p>
+    <% } %>
+    <div class="fruit-actions">
+    <form action="/fruits/<%=foundFruit._id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= foundFruit.name %></button>
+      </form>
+      <a href="/fruits/<%= foundFruit._id %>/edit">Edit <%= foundFruit.name %></a>
+     <!-- edit.ejs / show.ejs -->
+    </div>
+     <body>
+        <div class="fruit-details">
+          <!-- show page content -->
+        </div>
+        <a class="fruits-index-link" href="/fruits">
+          <div class="index-link-text">Back to Fruits</div>
+        </a>
+      </body>
+</html>

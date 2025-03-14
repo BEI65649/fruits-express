@@ -1,0 +1,35 @@
+<!-- views/fruits/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+   <!-- all template pages -->
+
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  // new code below this line
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+    <title>Create a Fruit</title>
+    <h1>Create a New Fruit!</h1>
+    <!-- views/fruits/new.ejs -->
+    <a href="/fruits/">Back to Index</a>
+    <form action="/fruits" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <!-- new.ejs / edit.ejs -->
+
+ <div class="checkbox-div">
+    <label for="ready-to-eat">Ready to Eat?</label>
+     <input type="checkbox" name="isReadyToEat" id="ready-to-eat" />
+</div>
+
+        <button type="submit">Add Fruit</button>
+    </form>
+ </head>
+  <body>
+ </body>
+</html>
