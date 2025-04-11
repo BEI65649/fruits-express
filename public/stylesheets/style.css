@@ -224,3 +224,23 @@ body {
     margin: 20px 0 0 0;
   }
  
+  ul {
+    display: block; /* Ensure the list is displayed as a block */
+    list-style-type: disc; /* Add bullet points */
+    padding-left: 20px; /* Add space to the left of the list */
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* Add vertical spacing between items */
+    padding-left: 10px; /* Add space inside each list item */
+    padding-right: 10px; /* Add space inside each list item */
+    list-style-position: inside; /* Ensure bullets are inside the padding */
+  }
+
+  .add-new-fruit-link {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #769642;
+    font-weight: bold;
+  }

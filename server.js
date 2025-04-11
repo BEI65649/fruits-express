@@ -28,7 +28,8 @@ app.use(morgan("dev"))
 
 //I.N.D.U.C.E.S
 
-
+// new code below this line
+app.use(express.static(path.join(__dirname, "public")));
 //root home
 
 
